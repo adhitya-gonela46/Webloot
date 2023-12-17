@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Personal Website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FOnt awesome icons -->
+  <script src="https://kit.fontawesome.com/fa74aa9994.js" crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<!-- google fonts and icons -->
+ 
+  <!-- Text with different styles -->
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat:wght@300;600&family=Rajdhani:wght@300&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Bootsnip docs -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
+</head>
+<style>
+    body{
+        font-family: Montserrat;
+    }
+
+    /* title section and navbar */
+    #title{
+        background-color:beige ;
+        color: black;
+    }
+    .navbar-brand{padding-left: 20px;}
+    .nav-link{
+        padding-right: 20px;
+    }
+    .nabar-nav{
+        margin-right: 1cm;
+    }
+    h1{
+        font-family: Montserrat;
+        font-size: 3.5rem;
+        font-weight: lighter;
+    }
+    h2{
+        font-family: Montserrat;
+        font-weight: lighter;
+        font-size: 3rem;
+    }
+    h3{
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .container-fluid{
+        padding: 3% 15% 12% 15%;
+    }
+    .navbar{
+        padding: 0 0 4rem 0;
+    }
+    .navbar-brand{
+        font-family: Ubuntu;
+        margin-left: -0.5cm;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    .nav-item{
+        padding: 0 18px;
+    }
+    .nav-link{
+        font-size: 1.2rem;
+        color: black;
+    }
+    .download-button{
+        margin: 5% 3% 5% 0;
+        
+    }
+    .title-image{
+        width: 60%;
+        height: 300px;
+        width: 450px;
+        position: absolute;
+        border-radius: 20px;
+        right: 17%;
+        box-shadow: 4px 6px 12px 4px rgba(0,0,0,0.5);
+        
+    }
+    
+    
+    /* features */
+    #features{
+        padding: 7% 15%;
+        background-color: white;
+    }
+    .feature-box{
+        text-align: center;
+        padding: 5%;
+    }
+    .icon{
+        color: black;
+        margin-bottom: 10px;
+    }
+    .icon:hover{
+        color: rgb(79, 71, 71);
+    }
+
+    /* testimonials */
+    #testimonials{
+        background-color: black;
+        
+        text-align: center;
+       
+    }
+    .testimonial-image{
+        width: 10%;
+        border-radius: 20px;
+       width: 300px;
+       height: 250px;
+        margin: 20px;
+        box-shadow: 4px 6px 12px 4px rgb(152, 140, 140);
+    }
+    .testimonial-video{
+        padding-top: 20px;
+        border-radius:30px ;
+        width: 250px;
+        height: 350px;
+        animation: myanime 3s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 2;
+        transition: width 2s, height 2s, transform 2s;
+
+        
+    }
+    #testimonials:hover .testimonial-video{
+        width: 260px;
+        height: 360px;
+        transform: rotate(360deg);
+    }
+    @keyframes myanime{
+        0%{left: 0px; top: 0px;}
+        50%{
+            left: 200px;top: 0px;
+        }
+        100%{left: 0px;top: 0px;;}
+    }
+    .carousel-item{
+        padding: 7% 15%;
+    }
+    #press{
+        background-color: beige;
+        text-align: center;
+        padding-bottom: 3%;
+    }
+    .press-logo{
+        width: 15%;
+        margin: 20px 20px 70px;
+        padding-top: 3cm;
+    }
+    /* pricing */
+    #pricing{
+        padding: 100px;
+        text-align: center;
+        
+
+    }
+    .pricing-column{
+        padding: 3% 2%;
+    }
+    
+    .yyy{
+        width: 100%;
+    }
+    .course{
+        font-size: 2.5rem;
+    }
+    #cta{
+  background-color: beige;
+  color:black;
+  padding: 7% 15%;
+  text-align: center;
+}
+.cta-heading{
+  font-family: Montserrat;
+
+  font-size: 3.5rem;
+}
+#footer{
+  padding: 7% 15%;
+  text-align: center;
+}
+.social-icon{
+  margin: 20px 10px;
+}
+@media screen and (max-width:1028px){
+    #title{
+        text-align: center;
+
+        
+    }
+    .title-image{
+        position: static;
+        width: 270px;
+        height: 220px;
+       
+    }
+    .testimonialhx{
+        position: static;
+        flex-direction: column;
+        
+    }
+}
+.testimonialhx{
+    color: white;
+
+}
+.social-icon:hover{
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+
+</style>
+<body>
+    <!-- title section -->
+
+    <section id="title">
+        <div class="container-fluid">
+        <!-- Navabar here -->
+
+        <nav class="navbar navbar-expand-md   ">
+            <i class="fa-brands fa-connectdevelop fa-8x" style="font-size: 20px;"></i>
+            <a class="navbar-brand" href="">WEB HIT</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+  
+                <ul class="navbar-nav ms-auto" >
+                    <li class=nav-item>
+                        <a class="nav-link" href="#testimonials">Websites</a>
+                    </li>
+                    <li class=nav-item>
+                        <a class="nav-link" target="_blank" href="https://in.images.search.yahoo.com/search/images;_ylt=Awr1TehSKPtjdPY.eCS7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=websites+templates&fr2=piv-web&type=E210IN826G0&fr=mcafee#id=14&iurl=https%3A%2F%2Fcolorlib.com%2Fwp%2Fwp-content%2Fuploads%2Fsites%2F2%2Ffree-colorlib-html-website-templates.jpg&action=click">Templates</a>
+                    </li>
+                    <li class=nav-item>
+                        <a class="nav-link" href="#footer">contact</a>
+                    </li>
+  
+            </ul>
+            </div>
+        </nav>
+  
+  
+        <!-- title -->
+        <div class="row">
+        <div class="col-lg-6">
+            <h1>WebDeveloper loot begins here by .</h1>
+            <button type="button" class="btn btn-lg btn-dark download-button"><i class="fa-brands fa-apple" style="margin-right: 0.5cm;"></i>Initiatives</button> 
+            <button type="button" class="btn btn-lg btn-outline-dark download-button"><i class="fa-brands fa-google-play" style="margin-right: 0.5cm;"></i>Initiatives</button>          
+        </div>
+        <div class="col-lg-6">
+            <img src="https://res.cloudinary.com/duqhak2mj/image/upload/v1702743793/1673874586238_1_cdufew.jpg" alt="asd" class="title-image">
+        </div>
+    </div>
+</div>
+
+    </section>
+
+    <!-- Features or qualities -->
+    <section id="features">
+        <div class="row">
+            <div class="feature-box col-lg-4">
+                <i class="fa-sharp fa-regular fa-chess-queen fa-4x icon"></i>
+                <h3>Gen strategy</h3>
+                <p>I assure your modern claire.</p>
+            </div>
+            <div class="feature-box col-lg-4">
+                <i class="fa-solid fa-laptop fa-4x icon"></i>
+                <h3>Guarenteed to work</h3>
+                <p>We all have desires, the greatest desires.</p>
+            </div>
+            <div class="feature-box col-lg-4">
+                <i class="fa-solid fa-magnifying-glass fa-4x icon"></i>
+                <h3>Personal sites</h3>
+                <P>Let begin your explores by your personal sites.</P>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+            <div class="carousel-inner">
+            <div class="carousel-item active" >
+            <h2 class="testimonialhx">Begin your enhancement here by exploring yourself on webkits</h2>
+            <video src="" loop muted autoplay class="testimonial-video"></video>
+            <em class="testimonialhx">Modern</em>
+            </div>
+              <div class="carousel-item" >
+              <h2 class="testimonialhx">Begin your enhancement here by exploring yourself on webkits</h2>
+              <img src="website img1.png" class="testimonial-image" alt="dog-profile">
+              <em class="testimonialhx">Personal -portfolios</em>
+              </div>
+              <div class="carousel-item"  >
+              <h2 class="testimonialhx">Minimal and max website templates for android,IOS and various publishments.</h2>
+              <img src="Website image2.png" class="testimonial-image" alt="dog-profile">
+              <em class="testimonialhx">Pebbles, New York</em>
+              </div>
+              <div class="carousel-item"  >
+              <h1 class="testimonialhx">Professional Looking Ecommecre Websites For Modelling and Explore Too.</h1>
+              <img src="website4.png" class="testimonial-image" alt="dog-profile">
+              <em class="testimonialhx">Pebbles, New York</em>
+              </div>
+            </div>
+            <a class="carousel-control-prev" role="button-dark" href="#testimonial-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" ></span>
+        
+        
+            </a>
+            <a class="carousel-control-next" role="button-dark" href="#testimonial-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+        
+            </a>
+          </div>
+
+
+    </section>
+
+
+    <!-- press sec -->
+    <section id="press">
+        <section class="coloured-section" id="press">
+            <img class="press-logo" src="techcrunch.png" alt="tc-logo">
+            <img class="press-logo" src="tnw.png" alt="tnw-logo">
+            <img class="press-logo" src="bizinsider.png" alt="biz-insider-logo">
+            <img class="press-logo" src="mashable.png" alt="mashable-logo">
+        
+          </section>
+       
+    </section>
+
+    <!-- pricing sec -->
+    
+    <section id="pricing">
+        
+        <h2>Make your templates enhance your grid.</h2>
+        <p>Simple and attractive growth begins with the attentive websites.</p>
+        <div class="row">
+        <div class="pricing-column col-lg-4">
+        <div class="card">
+        <div class="card-header">
+            <h3>Skill Set</h3>
+        </div>
+        <div class="card-body">
+            <h2 class="course">Course initiatives</h2>
+            <p>Webdevelopment</p>
+            <p>Template Figma</p>
+            <p>IOS development</p>
+            <button class="btn btn-lg btn-block btn-outline-dark yyy" type="button">Sign Up</button>
+
+        </div>
+    </div>
+    </div>
+        <div class="pricing-column col-lg-4">
+        <div class="card">
+        <div class=card-header>
+            <h3>Level Lang's</h3>
+        </div>
+        <div class="card-body">
+            <h2 class="course">Full Stack</h2>
+            <p>Java Script</p>
+            <p>React JS</p>
+            <p>Angular</p>
+            <button class="btn btn-lg btn-block btn-dark yyy" type="button">Sign Up</button>
+
+        </div>
+    </div>
+    </div>
+        <div class="pricing-column col-lg-4" >
+        <div class="card">
+        <div class="card-header">
+            <h3>Stacks</h3>
+        </div>
+        <div class="card-body">
+            <h2 class="course">Mapple Wmx</h2>
+            <p>Website Template</p>
+            <p>Core publishments</p>
+            <p>Paid Promotions</p>
+            <button class="btn btn-lg btn-block btn-dark yyy" type="button">Sign Up</button>
+
+        </div>
+    </div>
+        </div>
+    </div>
+        
+
+    </section>
+    <!-- cta -->
+    <section class="coloured-section" id="cta">
+
+        <h3 class="cta-heading">Build your knowledge to enhancement in the way websites.</h3>
+        <button type="button" class="download-button btn btn-lg btn-dark"><i class="fa-brands fa-apple" style="margin-right: 0.5cm;"></i>Download</button>
+        <button type="button" class="download-button btn btn-lg btn-light"><i class="fa-brands fa-google-play" style="margin-right: 0.5cm;"></i>Download</button>
+    
+      </section>
+      <!-- footer -->
+      <section id="footer">
+        <a href=""><i class="social-icon fa-brands fa-facebook"></i></a>
+        <a href=""><i class="social-icon fa-brands fa-instagram"></i></a>
+        <a href=""><i class="social-icon fa-brands fa-twitter"></i></a>
+        <a href=""><i class="social-icon fa-light fa-envelope"></i></a>
+        <p>© Copyright Venkat Adhtitya Gonela</p>
+
+      </section>
+    
+
+
+    
+</body>
+</html>
